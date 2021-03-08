@@ -58,4 +58,7 @@ Heatmap(mat, name = "mat",
         column_title = "i an a column title",
         column_title_side = "bottom",
         column_title_gp = gpar(col="red", fontsize = 18, fontface="bold"))
-
+# 5. 支持分割的标题
+# code only for demonstration
+# row title would be cluster_1 and cluster_2
+Heatmap(mat, name = "mat", row_km = 2, row_title = "cluster_%s")
